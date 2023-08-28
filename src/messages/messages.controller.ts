@@ -3,7 +3,7 @@ import { MessagesService } from './messages.service';
 
 @Controller('messages')
 export class MessagesController {
-  constructor(private readonly messagesService: MessagesService) {}
+  constructor(private messagesService: MessagesService) {}
   @Get()
   findAll() {
     return this.messagesService.findAll();
